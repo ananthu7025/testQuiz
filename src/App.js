@@ -112,13 +112,13 @@ const App = () => {
       {showMobileWarning ? (
         console.log()
       ) : pathname.split("/")[1] !== "quizTest" ? (
-        <div class="d-flex dash-background" id="wrapper dash-back">
+        <div className="d-flex dash-background" id="wrapper dash-back">
           <Sidebar />
           <div id="page-content-wrapper">
             <Navbar />
-            <div class="container-fluid px-4">
+            <div className="container-fluid px-4">
               -
-              <div class="row my-5">
+              <div className="row my-5">
                 <Routes>
                   {/* <Route path="/profile" element={<Profile />} /> */}
                   <Route path="/" element={<Dashboard />} />
@@ -130,12 +130,12 @@ const App = () => {
               </div>
             </div>
             <div
-        class="text-center p-3 footer-over"
+        className="text-center p-3 footer-over"
         style={{ backgroundColor: "white", marginTop: "100px" }}
       >
-        <p class="text-dark">© 2022 Copyright:</p>
+        <p className="text-dark">© 2022 Copyright:</p>
         <a
-          class="text-dark"
+          className="text-dark"
           href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zDIoLik2TMkyYLRSNagwTkpMNTRNtEg1Sk5NTDE0tjKoME-1TDQyTjIztLBMMzQxSfYSrErNLi5JVChJTc7Iy8_JT68EABj4Fq4&q=zeksta+technology&rlz=1C1CHBF_enIN933IN934&oq=zeksta+&aqs=chrome.1.69i57j46i175i199i512j0i512j69i61.3409j0j15&sourceid=chrome&ie=UTF-8"
         >
           {" "}

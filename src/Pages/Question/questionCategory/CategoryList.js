@@ -119,18 +119,18 @@ const CategoryList = (props) => {
 
         <meta name="category" />
       </Helmet>
-      <div class="container" style={{ width: "100%" }}>
-        <div class="d-flex justify-content-between" style={{ width: "100%" }}>
-          <div class="col-xl-3 col-md-6 mb-3" style={{ width: "40%" }}>
-            <div class="input-group mb-0" style={{ width: "100%" }}>
+      <div className="container" style={{ width: "100%" }}>
+        <div className="d-flex justify-content-between" style={{ width: "100%" }}>
+          <div className="col-xl-3 col-md-6 mb-3" style={{ width: "40%" }}>
+            <div className="input-group mb-0" style={{ width: "100%" }}>
               <div
-                class="d-flex justify-content-start "
+                className="d-flex justify-content-start "
                 style={{ width: "70%" }}
               >
                 <div style={{ width: "100%" }}>
                   <input
                     type="text"
-                    class="form-control border border-dark "
+                    className="form-control border border-dark "
                     placeholder="Search..."
                     value={searchCate}
                     onChange={onChangeSearchCate}
@@ -141,11 +141,11 @@ const CategoryList = (props) => {
             </div>
           </div>
           <div
-            class="col-xl-9 col-md-6 d-flex justify-content-end"
+            className="col-xl-9 col-md-6 d-flex justify-content-end"
             style={{ width: "30%" }}
           >
             <form>
-              <div class="form-group mb-0">
+              <div className="form-group mb-0">
                 <div>
                   <AddCategoryModel refreshList={refreshList} />
                 </div>
@@ -153,9 +153,9 @@ const CategoryList = (props) => {
             </form>
           </div>
         </div>
-        <div class="col-lg-12">
-          <div class="card">
-            <div class="card-body border border-dark">
+        <div className="col-lg-12">
+          <div className="card">
+            <div className="card-body border border-dark">
               <CategoryTable
                 data={Newcategories}
                 refreshList={refreshList}
@@ -166,7 +166,7 @@ const CategoryList = (props) => {
                 status={status}
               />
               <div
-                class="d-flex .justify-content-between"
+                className="d-flex .justify-content-between"
                 style={{
                   marginRight: "5px",
                   width: "120px",
@@ -183,7 +183,7 @@ const CategoryList = (props) => {
                   }}
                 >
                   <select
-                    class="form-select "
+                    className="form-select "
                     onChange={handlePageSizeChange}
                     style={{ width: "70px", marginRight: "5px" }}
                   >

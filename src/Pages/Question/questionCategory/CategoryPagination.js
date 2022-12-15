@@ -6,15 +6,15 @@ const CatePagination = ({ page, setPage, count }) => {
   const classes = useStyles();
   return (
     <>
-      <div class="pt-3">
-        <ul style={{ gap: "3px" }} class="pagination justify-content-end">
+      <div className="pt-3">
+        <ul style={{ gap: "3px" }} className="pagination justify-content-end">
           <li
             className={page <= 1 ? "page-item disabled" : "page-item"}
             style={page <= 1 ? { "pointer-events": "none" } : {}}
             onClick={() => setPage(page - 1)}
           >
-            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-              <i class="fas fa-less-than"></i>
+            <a className="page-link" href="#" tabindex="-1" aria-disabled="true">
+              <i className="fas fa-less-than"></i>
             </a>
           </li>
           {createArr(count).map((item, i) => {
@@ -25,7 +25,7 @@ const CatePagination = ({ page, setPage, count }) => {
                 onClick={() => setPage(i + 1)}
                 className={"page-item"}
               >
-                <a class="page-link" href="#">
+                <a className="page-link" href="#">
                   {i + 1}
                 </a>
               </li>
@@ -36,8 +36,8 @@ const CatePagination = ({ page, setPage, count }) => {
             style={page >= count ? { "pointer-events": "none" } : {}}
             onClick={() => setPage(page + 1)}
           >
-            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-              <i class="fas fa-greater-than"></i>
+            <a className="page-link" href="#" tabindex="-1" aria-disabled="true">
+              <i className="fas fa-greater-than"></i>
             </a>
           </li>
         </ul>

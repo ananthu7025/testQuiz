@@ -62,27 +62,27 @@ const Quiz_Result = () => {
   };
 
   return (
-    <div class="container">
+    <div className="container">
       <Helmet>
         <title>Quiz-App: &nbsp;Result</title>
         <meta name="Candidate" />
       </Helmet>
-      <div class="row">
-        <div class="col-xl-9 col-md-6">
+      <div className="row">
+        <div className="col-xl-9 col-md-6">
           <form>
-            <div class="form-group mb-0 w-50">
-              <div class="input-group mb-0 search-box">
+            <div className="form-group mb-0 w-50">
+              <div className="input-group mb-0 search-box">
                 <input
                   type="text"
                   name="search"
-                  class="form-control border border-dark"
+                  className="form-control border border-dark"
                   placeholder="Search by email..."
                   aria-describedby="project-search-addon"
                   value={search}
                   onChange={searchPost}
                 />
               </div>
-              <div id="toolbar" class="mt-3">
+              <div id="toolbar" className="mt-3">
                 <Select
                   id="selectMulti"
                   isMulti
@@ -97,13 +97,13 @@ const Quiz_Result = () => {
             </div>
           </form>
         </div>
-        <div class="col-xl-3 col-md-6 mb-3">
-          <div class="container d-flex  justify-content-end"></div>
+        <div className="col-xl-3 col-md-6 mb-3">
+          <div className="container d-flex  justify-content-end"></div>
         </div>
       </div>
-      <div class="col-lg-12 mt-3">
-        <div class="card">
-          <div class="card-body border border-dark">
+      <div className="col-lg-12 mt-3">
+        <div className="card">
+          <div className="card-body border border-dark">
             <Result
               search={search}
               page={page}

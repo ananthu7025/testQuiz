@@ -46,10 +46,10 @@ const Result = ({ searchEmp, page, search,catArr }) => {
 
   return (
     <>
-      <div class="table-responsive project-list table-hover">
-        <table class="table project-table table-centered">
+      <div className="table-responsive project-list table-hover">
+        <table className="table project-table table-centered">
           <thead>
-            <tr class="border border-dark">
+            <tr className="border border-dark">
               <th scope="col">SL No</th>
               <th scope="col">Candidate</th>
               <th scope="col">Email</th>
@@ -102,7 +102,7 @@ const Result = ({ searchEmp, page, search,catArr }) => {
                     style={{ color: "black", border: "1px solid white" }}
                     onClick={() => hanldeClick(result)}
                   >
-                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <i className="fa fa-eye" aria-hidden="true"></i>
                   </button>
                 </td>
               </tr>

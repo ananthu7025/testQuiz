@@ -38,7 +38,7 @@ const QuesstionTable = ({ page, searchQue, search, expirence }) => {
   }, [searchQue]);
   return (
     <>
-      <div class="table-responsive project-list">
+      <div className="table-responsive project-list">
         {editModal && (
           <EditQuestion currentId={currentId} Editclose={Editclose} />
         )}
@@ -46,9 +46,9 @@ const QuesstionTable = ({ page, searchQue, search, expirence }) => {
         {deleteModal && (
           <QuestionDelete question={currentId} Deleteclose={Deleteclose} />
         )}
-        <table class="table project-table table-centered">
+        <table className="table project-table table-centered">
           <thead>
-            <tr class="border border-dark">
+            <tr className="border border-dark">
               <th scope="col">SL No</th>
               <th scope="col">Questions & Options</th>
               <th scope="col">Answer</th>
@@ -90,7 +90,7 @@ const QuesstionTable = ({ page, searchQue, search, expirence }) => {
                 <td>{question.expirence}</td>
 
                 <td>
-                  <div class="action">
+                  <div className="action">
                     <div className="editCatBtn1">
                       <BsFillPencilFill
                         className="editCatBtn2"

@@ -55,12 +55,12 @@ const Dashboard = () => {
     <>
       <div className="dash-back">
         <div className="row dash-t">
-          <div class="col-lg-6">
-            <div class="card-dash card-01 second-card">
-              <div class="card-body">
-                <div class="list-group">
-                  <div class="d-flex Heading ">
-                    <h5 class="text-heading">New Candidate</h5>
+          <div className="col-lg-6">
+            <div className="card-dash card-01 second-card">
+              <div className="card-body">
+                <div className="list-group">
+                  <div className="d-flex Heading ">
+                    <h5 className="text-heading">New Candidate</h5>
                   </div>
                   {employees?.filter((item) =>
                     moment(item.createdAt).isSame(currentDate, "day")
@@ -85,7 +85,7 @@ const Dashboard = () => {
                           <a
                             onClick={() => setCurrentId(employee._id)}
                             href="#"
-                            class="list-group-item list-group-item-action flex-column align-items-start dash-content "
+                            className="list-group-item list-group-item-action flex-column align-items-start dash-content "
                           >
                             <div
                               style={{
@@ -98,15 +98,15 @@ const Dashboard = () => {
                                 onClick={() => setCurrentId(employee._id)}
                               />
                             </div>
-                            <p style={{ marginTop: "-40px" }} class="mb-1">
+                            <p style={{ marginTop: "-40px" }} className="mb-1">
                               {" "}
                               <strong>Name:</strong> &nbsp;{employee.username}
                             </p>
-                            <small class="mb-1">
+                            <small className="mb-1">
                               <strong>Email:</strong> &nbsp;{employee.email}
                             </small>
                             <br />
-                            <small class="mb-1">
+                            <small className="mb-1">
                               <strong>Mobile_No:</strong> &nbsp;
                               {employee.mobile_no}
                             </small>
@@ -125,12 +125,12 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="card-dash card-01 second-card">
-              <div class="card-body">
-                <div class="list-group">
-                  <div class="d-flex Heading">
-                    <h5 class="text-heading">Pending Candidate</h5>
+          <div className="col-lg-6">
+            <div className="card-dash card-01 second-card">
+              <div className="card-body">
+                <div className="list-group">
+                  <div className="d-flex Heading">
+                    <h5 className="text-heading">Pending Candidate</h5>
                   </div>
                   {employees?.filter((emp) => !succesEmplo.includes(emp))
                     .length === 0 ? (
@@ -145,17 +145,17 @@ const Dashboard = () => {
                         <div key={employee._id}>
                           <a
                             href="#"
-                            class="dash-content list-group-item list-group-item-action flex-column align-items-start "
+                            className="dash-content list-group-item list-group-item-action flex-column align-items-start "
                           >
-                            <p class="mb-1">
+                            <p className="mb-1">
                               {" "}
                               <strong>Name:</strong> &nbsp;{employee.username}
                             </p>
-                            <small class="mb-1">
+                            <small className="mb-1">
                               <strong>Email:</strong> &nbsp;{employee.email}
                             </small>
                             <br />
-                            <small class="mb-1">
+                            <small className="mb-1">
                               <strong>Mobile_No:</strong> &nbsp;
                               {employee.mobile_no}
                             </small>
@@ -167,12 +167,12 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div class="col-lg-6 ">
-            <div class="card-dash card-01 second-card">
-              <div class="card-body">
-                <div class="list-group">
-                  <div class="d-flex Heading">
-                    <h5 class="text-heading">Expired Candidate</h5>
+          <div className="col-lg-6 ">
+            <div className="card-dash card-01 second-card">
+              <div className="card-body">
+                <div className="list-group">
+                  <div className="d-flex Heading">
+                    <h5 className="text-heading">Expired Candidate</h5>
                   </div>
 
                   {employees?.filter((emp) => !succesEmplo.includes(emp))
@@ -186,17 +186,17 @@ const Dashboard = () => {
                       <div key={employee._id}>
                         <a
                           href="#"
-                          class="list-group-item list-group-item-action flex-column align-items-start dash-content "
+                          className="list-group-item list-group-item-action flex-column align-items-start dash-content "
                         >
-                          <p class="mb-1">
+                          <p className="mb-1">
                             {" "}
                             <strong>Name:</strong> &nbsp;{employee.username}
                           </p>
-                          <small class="mb-1">
+                          <small className="mb-1">
                             <strong>Email:</strong> &nbsp;{employee.email}
                           </small>
                           <br />
-                          <small class="mb-1">
+                          <small className="mb-1">
                             <strong>Mobile_No:</strong> &nbsp;
                             {employee.mobile_no}
                           </small>
@@ -208,12 +208,12 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="card-dash card-01 second-card">
-              <div class="card-body">
-                <div class="list-group">
-                  <div class="d-flex Heading">
-                    <h5 class="heading">Candidate Result</h5>
+          <div className="col-lg-6">
+            <div className="card-dash card-01 second-card">
+              <div className="card-body">
+                <div className="list-group">
+                  <div className="d-flex Heading">
+                    <h5 className="heading">Candidate Result</h5>
                   </div>
 
                   {results
@@ -224,9 +224,9 @@ const Dashboard = () => {
                       <div key={i}>
                         <a
                           href="#"
-                          class="list-group-item list-group-item-action flex-column align-items-start dash-content "
+                          className="list-group-item list-group-item-action flex-column align-items-start dash-content "
                         >
-                          <p class="mb-1">
+                          <p className="mb-1">
                             {" "}
                             <strong>Name:</strong> &nbsp;
                             {employees?.filter((emp) => emp._id == result.empId)
@@ -236,11 +236,11 @@ const Dashboard = () => {
                                 )[0].username
                               : ""}
                           </p>
-                          <small class="mb-1">
+                          <small className="mb-1">
                             <strong>Email:</strong> &nbsp;{result.empEmail}
                           </small>
                           <br />
-                          <small class="mb-1">
+                          <small className="mb-1">
                             <strong>Score:</strong> &nbsp;
                             {result.score + "/" + result.total_score}
                           </small>

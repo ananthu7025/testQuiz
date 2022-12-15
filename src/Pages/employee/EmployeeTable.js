@@ -57,10 +57,10 @@ const EmployeeTable = ({ searchEmp, page, search }) => {
           Deleteclose={Deleteclose}
         />
       )}
-      <div class="table-responsive project-list table-hover">
-        <table class="table project-table table-centered table-nowrap">
+      <div className="table-responsive project-list table-hover">
+        <table className="table project-table table-centered table-nowrap">
           <thead>
-            <tr class="border border-dark">
+            <tr className="border border-dark">
               <th className="slno" scope="col">
                 SL No
               </th>
@@ -93,7 +93,7 @@ const EmployeeTable = ({ searchEmp, page, search }) => {
                 </td>
                 <td>{moment(employee.createdAt).utc().format("DD-MM-YY")}</td>
                 <td>
-                  <div class="action">
+                  <div className="action">
                     <div className="editCatBtn1">
                       <BsFillPencilFill
                         className="editCatBtn2"

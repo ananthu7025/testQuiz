@@ -261,10 +261,10 @@ const QuizTest = () => {
       {!googleAuth && !tokenLive && (
         <div style={{ width: "100%" }}>
           <ResultPage />
-          <div class="container pb-0" style={{ height: "500px" }}>
-            <div class="row" style={{ width: "90%" }}>
+          <div className="container pb-0" style={{ height: "500px" }}>
+            <div className="row" style={{ width: "90%" }}>
               <div
-                class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"
+                className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3"
                 style={{ width: "90%" }}
               >
                 <h5>First you need to login by Google</h5>
@@ -322,7 +322,7 @@ const QuizTest = () => {
                 }
               })
             }
-            <div class="headerTest" onLoad={!submitted ? showAlert : ""}>
+            <div className="headerTest" onLoad={!submitted ? showAlert : ""}>
               <div
                 className="modal-header justify-content-between "
                 style={{
@@ -332,7 +332,7 @@ const QuizTest = () => {
                   margin: "auto",
                 }}
               >
-                <div class="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase">
+                <div className="sidebar-heading text-center py-4 primary-text fs-4 fw-bold text-uppercase">
                   <img src={Logo} alt="logo" />
                 </div>
                 <div
@@ -378,15 +378,15 @@ const QuizTest = () => {
               <div className="modal-dialog modal-fullscreen">
                 <div className="modal-content">
                   <div className="modal-body">
-                    <div class="privew mt-2">
+                    <div className="privew mt-2">
                       {questions.map((item, i) => {
                         return (
                           <>
-                            <div class="questionsBox">
-                              <div class="questions">
+                            <div className="questionsBox">
+                              <div className="questions">
                                 {i + 1 + ".  " + item.question}
                               </div>
-                              <ol type="A" class="answerList">
+                              <ol type="A" className="answerList">
                                 {item.options
                                   .sort(() => 1 - Math.random())
                                   .map((ans, index) => {
@@ -405,7 +405,7 @@ const QuizTest = () => {
                                       id.checked = ID;
                                     }
                                     return (
-                                      <li class="list-options  centre">
+                                      <li className="list-options  centre">
                                         <label
                                           className="optionLabel "
                                           style={{}}
@@ -485,7 +485,7 @@ const QuizTest = () => {
                           </>
                         );
                       })}
-                      <div class="modal-footer justify-content-center mt-4">
+                      <div className="modal-footer justify-content-center mt-4">
                         <button
                           type="button btn-close"
                           className="button-66 mr-3"

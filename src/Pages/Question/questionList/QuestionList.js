@@ -70,19 +70,19 @@ const QuestionList = () => {
 
   const { questions } = useSelector((state) => state.questions);
   return (
-    <div class="container">
+    <div className="container">
       <Helmet>
         <title>Quiz-App: &nbsp; Question</title>
         <meta name="employee" />
       </Helmet>
-      <div class="row">
-        <div class="col-xl-9 col-md-6">
+      <div className="row">
+        <div className="col-xl-9 col-md-6">
           <form>
-            <div class="form-group mb-0  w-50 ">
-              <div class="input-group mb-0 search-box">
+            <div className="form-group mb-0  w-50 ">
+              <div className="input-group mb-0 search-box">
                 <input
                   type="text"
-                  class="form-control border border-dark"
+                  className="form-control border border-dark"
                   placeholder="Search..."
                   aria-describedby="project-search-addon"
                   value={search}
@@ -95,7 +95,7 @@ const QuestionList = () => {
                     setExpirence(e.target.value);
                   }}
                   id="select"
-                  class=" mt-2 "
+                  className=" mt-2 "
                 >
                   <IoMdArrowDropdown />
                   <option value="">All</option>
@@ -104,7 +104,7 @@ const QuestionList = () => {
                   <option value={1}>Beginner</option>
                 </select>
               </div>
-              <div id="toolbar" class=" mt-2 ">
+              <div id="toolbar" className=" mt-2 ">
                 {/* <label htmlFor="exampleInputEmail1" className="form-label">
                       Technology
                     </label> */}
@@ -122,15 +122,15 @@ const QuestionList = () => {
             </div>
           </form>
         </div>
-        <div class="col-xl-3 col-md-6 mt-5">
-          <div class="container d-flex  justify-content-end ">
+        <div className="col-xl-3 col-md-6 mt-5">
+          <div className="container d-flex  justify-content-end ">
             <AddQuestion />
           </div>
         </div>
       </div>
-      <div class="col-lg-12 mt-3">
-        <div class="card">
-          <div class="card-body border border-dark">
+      <div className="col-lg-12 mt-3">
+        <div className="card">
+          <div className="card-body border border-dark">
             <QuesstionTable
               search={search}
               page={page}
